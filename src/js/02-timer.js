@@ -34,7 +34,6 @@ refs.startBtnRef.addEventListener('click', () => {
     const remainingTime = calendar.selectedDates[0].getTime() - Date.now();
     const formattedTime = convertMs(remainingTime);
     if (remainingTime < 0) {
-      refs.timerRef.style.color = 'red';
       clearInterval(intervalID);
       return;
     }
